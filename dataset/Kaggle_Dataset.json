@@ -1,0 +1,17 @@
+{
+	"name": "Kaggle_Dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Kaggle_Source_Linked_Service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		},
+		"schema": {}
+	}
+}
