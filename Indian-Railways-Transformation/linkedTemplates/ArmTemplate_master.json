@@ -1,0 +1,77 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "Indian-Railways-Transformation"
+		},
+		"ADLS_Destination_Linked_Service_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ADLS_Destination_Linked_Service'"
+		},
+		"Kaggle_Source_Linked_Service_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'Kaggle_Source_Linked_Service'"
+		},
+		"ADLS_Destination_Linked_Service_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://indianrailwaysdata.dfs.core.windows.net/"
+		},
+		"Kaggle_Source_Linked_Service_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://www.kaggle.com/datasets/sripaadsrinivasan/indian-railways-dataset?resource=download"
+		},
+		"Kaggle_Source_Linked_Service_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "brijeshpatel4547"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "Indian-Railways-Transformation_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"ADLS_Destination_Linked_Service_accountKey": {
+						"value": "[parameters('ADLS_Destination_Linked_Service_accountKey')]"
+					},
+					"Kaggle_Source_Linked_Service_password": {
+						"value": "[parameters('Kaggle_Source_Linked_Service_password')]"
+					},
+					"ADLS_Destination_Linked_Service_properties_typeProperties_url": {
+						"value": "[parameters('ADLS_Destination_Linked_Service_properties_typeProperties_url')]"
+					},
+					"Kaggle_Source_Linked_Service_properties_typeProperties_url": {
+						"value": "[parameters('Kaggle_Source_Linked_Service_properties_typeProperties_url')]"
+					},
+					"Kaggle_Source_Linked_Service_properties_typeProperties_userName": {
+						"value": "[parameters('Kaggle_Source_Linked_Service_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Indian-Railways-Transformation"
+		},
+		"ADLS_Destination_Linked_Service_accountKey": {
+			"value": ""
+		},
+		"Kaggle_Source_Linked_Service_password": {
+			"value": ""
+		},
+		"ADLS_Destination_Linked_Service_properties_typeProperties_url": {
+			"value": "https://indianrailwaysdata.dfs.core.windows.net/"
+		},
+		"Kaggle_Source_Linked_Service_properties_typeProperties_url": {
+			"value": "https://www.kaggle.com/datasets/sripaadsrinivasan/indian-railways-dataset?resource=download"
+		},
+		"Kaggle_Source_Linked_Service_properties_typeProperties_userName": {
+			"value": "brijeshpatel4547"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
