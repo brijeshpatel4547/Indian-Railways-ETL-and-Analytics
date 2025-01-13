@@ -1,0 +1,9 @@
+{
+	"name": "Indian-Railways-Transformation",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4db5e473-c1ba-4069-affa-5eb95e769a79",
+		"tenantId": "b5a2d267-4ba4-4f75-a2c3-19ef56c332b5"
+	}
+}
