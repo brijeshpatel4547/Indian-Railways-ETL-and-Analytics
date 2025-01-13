@@ -10,9 +10,12 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "schedules.json",
 				"folderPath": "raw",
 				"fileSystem": "data"
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Optimal"
 			}
 		},
 		"schema": {}
