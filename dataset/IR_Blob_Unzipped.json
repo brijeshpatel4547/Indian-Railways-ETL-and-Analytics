@@ -1,0 +1,22 @@
+{
+	"name": "IR_Blob_Unzipped",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Staging_Area",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "raw",
+				"container": "data"
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Optimal"
+			}
+		}
+	}
+}
