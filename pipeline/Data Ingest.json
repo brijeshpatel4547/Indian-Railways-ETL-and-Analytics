@@ -4,7 +4,8 @@
 		"description": "Ingesting Raw Data from Kaggle API to ADLS Data Lake",
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Download",
+				"description": "Ingest the zipped file from GitHub using its API/URL",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -56,7 +57,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Copy data1",
+						"activity": "Download",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -108,6 +109,7 @@
 			},
 			{
 				"name": "Delete_unzipped",
+				"description": "Delete the unzipped file stored as Blob (Staging Area).",
 				"type": "Delete",
 				"dependsOn": [
 					{
