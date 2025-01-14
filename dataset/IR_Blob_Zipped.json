@@ -1,5 +1,5 @@
 {
-	"name": "IR_Blob_Unzipped",
+	"name": "IR_Blob_Zipped",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Staging_Area",
@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "507ec78a-d077-419d-b36b-0d9bf99427c3",
 				"folderPath": "raw",
 				"container": "data"
 			},
