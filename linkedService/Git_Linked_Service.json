@@ -1,0 +1,12 @@
+{
+	"name": "Git_Linked_Service",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://github.com/brijeshpatel4547/Indian-Railways-ETL-and-Analytics/blob/main/data/indian_rail.zip",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
