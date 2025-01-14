@@ -1,0 +1,20 @@
+{
+	"name": "IR_Kaggle_Zipped",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Kaggle_Source_Linked_Service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Optimal"
+			}
+		}
+	}
+}
