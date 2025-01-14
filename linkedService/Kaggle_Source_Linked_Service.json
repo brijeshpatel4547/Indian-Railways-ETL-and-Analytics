@@ -1,7 +1,7 @@
 {
 	"name": "Kaggle_Source_Linked_Service",
 	"properties": {
-		"description": "Fetches the Data from Kaggle using the API",
+		"description": "Fetches the Zipped File Data from Kaggle using the API",
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
