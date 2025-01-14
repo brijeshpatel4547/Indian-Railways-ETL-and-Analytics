@@ -1,8 +1,8 @@
 {
-	"name": "IR_Kaggle_Zipped",
+	"name": "IR_Git_Zipped",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "Kaggle_Source_Linked_Service",
+			"referenceName": "Git_Linked_Service",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
