@@ -39,7 +39,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "IR_Git_Zipped",
+						"referenceName": "IR_Kaggle_Unzipped",
 						"type": "DatasetReference"
 					}
 				],
