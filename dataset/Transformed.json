@@ -1,0 +1,56 @@
+{
+	"name": "Transformed",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_Source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "transformed",
+				"fileSystem": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "arrival",
+				"type": "String"
+			},
+			{
+				"name": "day",
+				"type": "String"
+			},
+			{
+				"name": "departure",
+				"type": "String"
+			},
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "station_code",
+				"type": "String"
+			},
+			{
+				"name": "station_name",
+				"type": "String"
+			},
+			{
+				"name": "train_name",
+				"type": "String"
+			},
+			{
+				"name": "train_number",
+				"type": "String"
+			}
+		]
+	}
+}
