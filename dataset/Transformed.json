@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "*.csv",
-				"folderPath": "transformed",
+				"fileName": "part-00000-tid-8602462604573436144-d6bcb21c-1c2c-471c-a3ff-71ece70729f0-18-1-c000.csv",
+				"folderPath": "transformed/schedules",
 				"fileSystem": "data"
 			},
 			"columnDelimiter": ",",
