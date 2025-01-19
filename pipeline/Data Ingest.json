@@ -145,6 +145,34 @@
 						"enablePartitionDiscovery": false
 					}
 				}
+			},
+			{
+				"name": "IR_Data_Transformation",
+				"description": "This activity will convert our raw data to transformed and cleansed data and store it in transformed layer of our container.",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "Extract",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/brijesh.patel.4547@outlook.com/Transformation_Logic"
+				},
+				"linkedServiceName": {
+					"referenceName": "Databricks_LS",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
