@@ -5,6 +5,9 @@
 			"referenceName": "Staging_Area",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Zipped_Datasets"
+		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {

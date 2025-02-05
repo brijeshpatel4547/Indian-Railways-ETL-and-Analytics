@@ -5,6 +5,9 @@
 			"referenceName": "Git_Linked_Service",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Zipped_Datasets"
+		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
