@@ -1,0 +1,13 @@
+{
+	"name": "ADLS_Moved",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Moves and gathers all CSV Files at one place",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://indianrailwaysdata.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDg4N0RGRjY0LUU4QjgtNEY5RC05RjlDLTkxMDg0RjgyNjczOV82NzU2OTY0NS1kNjhhLTQ0MmUtYWZkYS1lYzI3YzkxYWU4ZjkiDQp9"
+		}
+	}
+}
